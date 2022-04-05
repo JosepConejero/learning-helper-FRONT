@@ -11,7 +11,7 @@ const ReviewPage = () => {
   return (
     <>
       <Header
-        title={"Página en construcción"}
+        title={"Under construction"}
         picture={iconReviewPath}
         backgroundColor={backgroundColorIconReview}
         alternativeTextImage={alternativeTextIconReview}

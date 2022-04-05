@@ -11,7 +11,7 @@ export const QuestionsListPage = () => {
   return (
     <>
       <Header
-        title={"Página en construcción"}
+        title={"Under construction"}
         picture={iconAllQuestionsPath}
         backgroundColor={backgroundColorIconAllQuestions}
         alternativeTextImage={alternativeTextIconAllQuestions}
