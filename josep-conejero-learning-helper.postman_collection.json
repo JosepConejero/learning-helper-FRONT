@@ -1,0 +1,118 @@
+{
+  "info": {
+    "_postman_id": "84b27517-a0dd-4449-a0ec-6b9b73b68d0d",
+    "name": "josep-conejero-learning-helper",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "{{origin}}question/",
+      "request": {
+        "auth": {
+          "type": "noauth"
+        },
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "{{origin}}question/",
+          "host": ["{{origin}}question"],
+          "path": [""]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "{{origin}}question/6227b67fc624c56733927e2c",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "{{origin}}question/6227b912c624c56733927e2d",
+          "host": ["{{origin}}question"],
+          "path": ["6227b912c624c56733927e2d"]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "{{origin}}question/6227b912c624c56733927e2d",
+      "request": {
+        "method": "DELETE",
+        "header": [],
+        "url": {
+          "raw": "{{origin}}question/62309f1ed15ac1ae77489f1a",
+          "host": ["{{origin}}question"],
+          "path": ["62309f1ed15ac1ae77489f1a"]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "{{origin}}question/",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": " {\r\n     \"question\": \"¿Qué significa CI/CD? (variación 5)\",\r\n     \"answer\": \"CI / CD: Continuous Integration / Continous Deliver. se va volcando (integrando) constantemente en la rama máster. Despliegue continuo es una aproximación de ingeniería del software en que los equipos de desarrollo entregan funcionalidades de software de forma frecuente a través de la automatización de despliegues.​​​\"\r\n     }",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "{{origin}}question/",
+          "host": ["{{origin}}question"],
+          "path": [""]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "{{origin}}question/6227b912c624c56733927e2d",
+      "request": {
+        "method": "PUT",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": " {\r\n     \"question\": \"Pregunta patcheada\",\r\n     \"answer\": \"Respuesta patcheada.​​​\"\r\n     }",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "{{origin}}question/62309f2ed15ac1ae77489f1d",
+          "host": ["{{origin}}question"],
+          "path": ["62309f2ed15ac1ae77489f1d"]
+        }
+      },
+      "response": []
+    }
+  ],
+  "event": [
+    {
+      "listen": "prerequest",
+      "script": {
+        "type": "text/javascript",
+        "exec": [""]
+      }
+    },
+    {
+      "listen": "test",
+      "script": {
+        "type": "text/javascript",
+        "exec": [""]
+      }
+    }
+  ],
+  "variable": [
+    {
+      "key": "origin",
+      "value": "https://josep-conejero-learning-helper.onrender.com/",
+      "type": "string"
+    }
+  ]
+}
