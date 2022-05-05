@@ -59,3 +59,13 @@ export const logoutUserAction = (user) => ({
   type: actionTypes.logoutUser,
   user,
 });
+
+export const userToLoggedAction = (value) => ({
+  type: actionTypes.userToLogged,
+  value,
+});
+
+export const userToNotLoggedAction = (value) => ({
+  type: actionTypes.userToNotLogged,
+  value,
+});

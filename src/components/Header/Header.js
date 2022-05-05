@@ -1,7 +1,10 @@
 import { useDispatch, useSelector } from "react-redux";
 import { useNavigate } from "react-router-dom";
 import styled from "styled-components";
-import { logoutUserAction } from "../../redux/actions/actionsCreator/actionsCreator";
+import {
+  logoutUserAction,
+  userToNotLoggedAction,
+} from "../../redux/actions/actionsCreator/actionsCreator";
 import {
   buttonColor,
   headerBackgroundColor,
@@ -85,6 +88,7 @@ export const Header = ({
 
   const actionOnClickLogOut = () => {
     dispatch(logoutUserAction(user));
+    dispatch(userToNotLoggedAction());
     localStorage.removeItem("token");
     navigate("/login");
   };

@@ -16,7 +16,9 @@ const AllQuestionsPage = () => {
   const dispatch = useDispatch();
   useEffect(() => {
     dispatch(loadQuestionsThunk);
+    // console.log("entra en el useEffect del AllQuestionsPage");
   }, [dispatch]);
+  // console.log("entra en AllQuestionsPage");
 
   return (
     <>

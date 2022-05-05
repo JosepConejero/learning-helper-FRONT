@@ -65,7 +65,6 @@
       "!src/reportWebVitals.ts",
       "!src/variables.js",
       "!src/components/ThreeDotMenu/ThreeDotMenu.js",
-      "!src/apiPrueba.js",
       "!src/index.js",
       "!src/redux/reducers/index.js",
       "!src/redux/store/store.js",
