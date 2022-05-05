@@ -9,7 +9,7 @@ import AddRemoveFromListsPage from "./components/pages/AddRemoveFromListsPage";
 import CreateListPage from "./components/pages/CreateListPage";
 import LoginPage from "./components/pages/LoginPage";
 import { useDispatch, useSelector } from "react-redux";
-import { useEffect, useState } from "react";
+import { useEffect } from "react";
 import jwtDecode from "jwt-decode";
 import {
   loginUserAction,
@@ -21,7 +21,7 @@ import { Toaster } from "react-hot-toast";
 
 function App() {
   const dispatch = useDispatch();
-  const isReallyLogged = useSelector((state) => state.isLogged);
+  //const isReallyLogged = useSelector((state) => state.isLogged);
   //console.log("isReallyLogged vale ", isReallyLogged);
 
   //const [isLogged, setIsLogged] = useState(false);
