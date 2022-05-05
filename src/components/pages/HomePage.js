@@ -28,7 +28,10 @@ import {
   selectedButtonColor,
 } from "../../variables";
 import { useDispatch, useSelector } from "react-redux";
-import { logoutUserAction } from "../../redux/actions/actionsCreator/actionsCreator";
+import {
+  logoutUserAction,
+  userToNotLoggedAction,
+} from "../../redux/actions/actionsCreator/actionsCreator";
 
 const Container = styled.main`
   width: 100%;
@@ -78,6 +81,7 @@ const HomePage = () => {
 
   const actionOnClickLogOut = () => {
     dispatch(logoutUserAction(user));
+    dispatch(userToNotLoggedAction());
     localStorage.removeItem("token");
     navigate("/login");
   };

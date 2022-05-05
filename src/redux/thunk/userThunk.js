@@ -2,6 +2,7 @@ import axios from "axios";
 import {
   createUserAction,
   loginUserAction,
+  userToLoggedAction,
 } from "../actions/actionsCreator/actionsCreator";
 import toast from "react-hot-toast";
 
@@ -22,6 +23,8 @@ export const loginThunk = (user, navigate) => async (dispatch) => {
       const token = data.token;
       localStorage.setItem("token", token);
       dispatch(loginUserAction(user));
+      dispatch(userToLoggedAction());
+
       navigate("/home");
     })
     .catch((error) => {

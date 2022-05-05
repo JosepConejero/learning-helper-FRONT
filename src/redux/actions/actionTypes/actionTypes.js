@@ -13,6 +13,9 @@ const actionTypes = {
   loginUser: "login-user",
   createUser: "create-user",
   logoutUser: "logout-user",
+
+  userToLogged: "user-to-logged",
+  userToNotLogged: "user-to-not-logged",
 };
 
 export default actionTypes;
