@@ -44,8 +44,7 @@ function App() {
   /* isLogged = */
 
   /* const isLogged = useSelector((state) => state.isLogged); */
-  /* const isLogged = localStorage.getItem("token");
-   */
+  /* const isLogged = localStorage.getItem("token"); */
 
   //dispatch(userToNotLoggedAction());
   //debugger;
